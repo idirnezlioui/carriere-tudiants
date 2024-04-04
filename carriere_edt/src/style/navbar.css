@@ -1,3 +1,36 @@
-button{
-    color: rebeccapurple;
+#bt1,#bt2{
+    margin-right: 30px;
+    border-radius: 30px;
+    align-items: center;
+    width: 10%;
+}
+#bt1{
+    background: #2256F2;
+}
+#bt2{
+    background: #EAF205;
+    border-color: #EAF205;
+}
+ul{
+    margin: auto;
+}
+li{
+    padding-left: 40px;
+}
+#image{
+    margin-left: 20px;
+    height: 65px;
+    border: 200px;
+}
+li a{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+#navbar{
+    height: 70px;
+}
+li a:hover {
+    border-bottom: 2px solid #2256F2; 
+    transition: 0.5s;
+    font-weight: bolder;
 }
