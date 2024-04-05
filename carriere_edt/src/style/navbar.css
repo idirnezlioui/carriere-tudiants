@@ -3,13 +3,18 @@
     border-radius: 30px;
     align-items: center;
     width: 10%;
+    border: none;
+    color: #222121;
+    color: #222121;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
 }
 #bt1{
     background: #2256F2;
+   
 }
 #bt2{
     background: #EAF205;
-    border-color: #EAF205;
 }
 ul{
     margin: auto;
@@ -22,15 +27,27 @@ li{
     height: 65px;
     border: 200px;
 }
-li a{
+.nav-item{
     font-family: Arial, Helvetica, sans-serif;
-
+    font-weight: 700;
 }
 #navbar{
     height: 70px;
 }
-li a:hover {
+a:hover {
     border-bottom: 2px solid #2256F2; 
-    transition: 0.5s;
-    font-weight: bolder;
+    transition: all 300ms ease-in-out 0s;
+    
+}
+#bt1:hover{
+    background:  #33B2FF; ;
+}
+#bt2:hover{
+    background: #EEF365;
+}
+#titre{
+    margin-top: 10px;
+    font-size: 2rem;
+    font-family: sans-serif;
+    font-weight: 600;
 }
