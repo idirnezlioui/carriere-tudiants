@@ -4,8 +4,7 @@
     align-items: center;
     width: 10%;
     border: none;
-    color: #222121;
-    color: #222121;
+    color: #222121; 
     font-weight: 600;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -33,6 +32,8 @@ li{
 }
 #navbar{
     height: 70px;
+    position: fixed;
+    width: 100%;
 }
 a:hover {
     border-bottom: 2px solid #2256F2; 
@@ -46,7 +47,7 @@ a:hover {
     background: #EEF365;
 }
 #titre{
-    margin-top: 10px;
+    margin-top: 70px;
     font-size: 2rem;
     font-family: sans-serif;
     font-weight: 600;
