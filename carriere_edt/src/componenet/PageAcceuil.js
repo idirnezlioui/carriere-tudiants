@@ -3,7 +3,7 @@ import NavBarre from "./NavBarre";
 import Body from "./Body";
 import Footer from "./footer";
 import SecondBody from "./Body2";
-
+import Bodytree from "./Body3";
 function pageAcceuil() {
   return (
     <>
@@ -16,6 +16,7 @@ function pageAcceuil() {
       </div>
       <Body />
       <SecondBody />
+      <Bodytree/>
       <Footer />
     </>
   );
