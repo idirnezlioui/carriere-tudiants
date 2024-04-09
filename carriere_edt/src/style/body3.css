@@ -1,0 +1,10 @@
+.complet{
+    background-color: brown ;
+    margin-top: 50px;
+}
+.complet h3{
+    border-bottom: solid 3px;
+}
+.card{
+    width: 18rem;
+}
