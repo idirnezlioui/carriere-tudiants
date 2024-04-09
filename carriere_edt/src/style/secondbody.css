@@ -1,0 +1,60 @@
+.secod-body{
+    background-image:url("../images/imgbody1.jpg");
+    background-size: cover; /* Pour s'assurer que l'image couvre toute la zone */
+    background-position: center; /* Pour centrer l'image horizontalement et verticalement */
+    background-repeat: no-repeat;
+    height: 50vh; 
+}
+#voi,#entreprise,#emploi{
+    width: 28%;
+    margin: 80px auto;
+    height: 30vh;
+    border-radius: 40%;
+    text-align: center;
+}
+
+#voi {
+    background-color: #2256F2;
+}
+#entreprise{
+    background-color:  #1BF2A3;
+}
+#emploi{
+    background-color: #EAF205;
+}
+#voi button{
+    border: none;
+    background-color: #EAF205;
+    border-radius: 30px;
+    color: #222121;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#entreprise button{
+    border: none;
+    background-color: #2256F2;
+    border-radius: 30px;
+    color: #222121;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#emploi button{
+    border: none;
+    background-color:  #1BF2A3;
+    border-radius: 30px;
+    color: #222121;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#voi:hover, #entreprise:hover, #emploi:hover {
+    transform: perspective(1000px) rotateZ(0deg) translateZ(20px) scale(1.03); /* Appliquer des transformations sur l'axe Z */
+    transition: transform 0.5s ease; /* Ajouter une transition fluide */
+    cursor: pointer;
+}
+#voi button:hover,#entreprise button:hover,#emploi button:hover{
+    opacity:0.8 ;
+}
+
+
+
+   
