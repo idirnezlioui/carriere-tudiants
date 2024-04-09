@@ -2,6 +2,7 @@
 import NavBarre from "./NavBarre";
 import Body from "./Body";
 import Footer from "./footer";
+import SecondBody from "./Body2";
 
 function pageAcceuil() {
   return (
@@ -12,15 +13,9 @@ function pageAcceuil() {
             <NavBarre />
           </div>
         </div>
-        <div className="row">
-          <div className="col-md-12 col-sm-12 col-xm-12">
-            <h1 id="titre">
-              Carrière étudiant t'accompagne tout au long de ta vie d'étudiant
-            </h1>
-          </div>
-        </div>
       </div>
       <Body />
+      <SecondBody />
       <Footer />
     </>
   );
