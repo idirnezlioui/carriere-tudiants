@@ -1,10 +1,11 @@
 import "../style/secondbody.css";
+
 function SecondBody() {
   return (
     <>
       <div className="container-fluid mt-5 secod-body">
         <div className="row">
-          <div className="col-sm-4" id="voi">
+          <div className="col-md-4 col-sm-12" id="voi">
             <h3>Column 1</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
             <p>
@@ -15,7 +16,7 @@ function SecondBody() {
               Primary
             </button>
           </div>
-          <div className="col-sm-4" id="entreprise">
+          <div className="col-md-4 col-sm-12" id="entreprise">
             <h3>Column 2</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
             <p>
@@ -26,7 +27,7 @@ function SecondBody() {
               Primary
             </button>
           </div>
-          <div className="col-sm-4" id="emploi">
+          <div className="col-md-4 col-sm-12" id="emploi">
             <h3>Column 3</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
             <p>
@@ -42,4 +43,5 @@ function SecondBody() {
     </>
   );
 }
+
 export default SecondBody;
