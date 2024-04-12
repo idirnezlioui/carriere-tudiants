@@ -4,6 +4,7 @@ import Body from "./Body";
 import Footer from "./footer";
 import SecondBody from "./Body2";
 import Bodytree from "./Body3";
+import BodyForth from "./body4";
 function pageAcceuil() {
   return (
     <>
@@ -17,6 +18,7 @@ function pageAcceuil() {
       <Body />
       <SecondBody />
       <Bodytree/>
+      <BodyForth/>
       <Footer />
     </>
   );
