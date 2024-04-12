@@ -1,10 +1,25 @@
-.complet{
-    background-color: brown ;
-    margin-top: 50px;
-}
+
 .complet h3{
     border-bottom: solid 3px;
 }
 .card{
-    width: 18rem;
+    width: 100%;
+    margin: 20px auto;
+  }
+  .text-start{
+    border-bottom: solid 2px #222121;;
+  }
+.card:hover{
+    transform: perspective(1000px) rotateZ(0deg) translateZ(20px) scale(1.03);
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+/* Responsive CSS */
+@media (max-width: 767px) {
+  .card{
+      width: 100%;
+      margin: 10px auto;
+      
+  
+  }
 }
