@@ -1,7 +1,6 @@
-//import { useState, useEffect } from "react";
 import "../style/navbar.css";
 import Logo from "../images/LOGO_Rond.png";
-import { Sticky } from "react-sticky";
+
 function NavBarre() {
   return (
     <>
@@ -17,7 +16,8 @@ function NavBarre() {
             data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
-            aria-label="Toggle navigation">
+            aria-label="Toggle navigation"
+          >
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -58,14 +58,17 @@ function NavBarre() {
           </div>
         </div>
       </nav>
-      <div className="row">
-        <div className="col-md-12 col-sm-12 col-xm-12">
-          <h1 id="titre">
-            Carrière étudiant t'accompagne tout au long de ta vie d'étudiant
-          </h1>
+      <div className="container">
+        <div className="row">
+          <div className="col-md-12 col-sm-12 col-xm-12">
+            <h1 id="titre" >
+              Carrière étudiant t'accompagne tout au long de ta vie d'étudiant
+            </h1>
+          </div>
         </div>
       </div>
     </>
   );
 }
+
 export default NavBarre;
