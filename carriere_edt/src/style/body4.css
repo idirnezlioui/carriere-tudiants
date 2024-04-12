@@ -1,0 +1,35 @@
+#ent1 {
+  background-image: url("../images/hermes.jpeg");
+}
+#ent2 {
+  background-image: url("../images/téléchargement.png");
+}
+#ent3 {
+  background-image: url("../images/chan.png");
+}
+#ent4 {
+  background-image: url("../images/mario.jpeg");
+}
+#ent5 {
+  background-image: url("../images/sephora.jpeg");
+}
+#ent6 {
+  background-image: url("../images/yevs.png");
+  border: none;
+}
+#ent1,#ent2,#ent3,#ent4,#ent5,#ent6 {
+    width: 14%;height: 30vh;
+    margin-left: auto;
+}
+.bd{
+    background-color: gray;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  color: #1BF2A3;
+}
