@@ -1,60 +1,72 @@
-.secod-body{
-    background-image:url("../images/imgbody1.jpg");
-    background-size: cover; /* Pour s'assurer que l'image couvre toute la zone */
-    background-position: center; /* Pour centrer l'image horizontalement et verticalement */
+.secod-body {
+    background-image: url("../images/imgbody1.jpg");
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    height: 50vh; 
+    padding: 50px 0; /* Ajout de rembourrage en haut et en bas */
 }
-#voi,#entreprise,#emploi{
-    width: 28%;
-    margin: 80px auto;
-    height: 30vh;
-    border-radius: 40%;
+
+#voi, #entreprise, #emploi {
     text-align: center;
+    width: 31%;
+    margin: 20px auto;
+    border-radius: 20%;
 }
 
 #voi {
     background-color: #2256F2;
 }
-#entreprise{
-    background-color:  #1BF2A3;
+
+#entreprise {
+    background-color: #1BF2A3;
 }
-#emploi{
+
+#emploi {
     background-color: #EAF205;
 }
+
 #voi button{
     border: none;
-    background-color: #EAF205;
     border-radius: 30px;
     color: #222121;
     font-weight: 600;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #EAF205;
 }
 #entreprise button{
     border: none;
-    background-color: #2256F2;
     border-radius: 30px;
     color: #222121;
     font-weight: 600;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #2256F2;
 }
 #emploi button{
     border: none;
-    background-color:  #1BF2A3;
     border-radius: 30px;
     color: #222121;
     font-weight: 600;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #1BF2A3;
 }
+
 #voi:hover, #entreprise:hover, #emploi:hover {
-    transform: perspective(1000px) rotateZ(0deg) translateZ(20px) scale(1.03); /* Appliquer des transformations sur l'axe Z */
-    transition: transform 0.5s ease; /* Ajouter une transition fluide */
+    transform: perspective(1000px) rotateZ(0deg) translateZ(20px) scale(1.03);
+    transition: transform 0.5s ease;
     cursor: pointer;
 }
-#voi button:hover,#entreprise button:hover,#emploi button:hover{
-    opacity:0.8 ;
+
+#voi button:hover, #entreprise button:hover, #emploi button:hover {
+    opacity: 0.8;
 }
 
-
-
-   
+/* Responsive CSS */
+@media (max-width: 767px) {
+    #voi, #entreprise, #emploi {
+        
+        width: 90%; 
+        margin: 5px auto;
+        
+    
+    }
+}
