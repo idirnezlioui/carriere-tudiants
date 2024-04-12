@@ -1,64 +1,72 @@
-img{
-    
-    margin-top: 15px;
-    border-radius:10px ;
+img {
+  margin-top: 15px;
+  border-radius: 10px;
 }
-#bd{
-    background-color: #1BF2A3;
-    height: 53vh;
-    
+#bd {
+  background-color: #1bf2a3;
+  padding: 1rem;
 }
-#im1{
-    background-image:url('../images/img1.jpg') ;
+#im1 {
+  background-image: url("../images/img1.jpg");
 }
-#im2{
-    background-image:url('../images/img2.jpg') ;
+#im2 {
+  background-image: url("../images/img2.jpg");
 }
-#im3{
-    background-image:url('../images/img3.jpg') ;
+#im3 {
+  background-image: url("../images/img3.jpg");
 }
-#im1,#im2,#im3 {
-    background-size: cover; /* Pour s'assurer que l'image couvre toute la zone */
-    background-position: center; /* Pour centrer l'image horizontalement et verticalement */
-    background-repeat: no-repeat; /* Pour éviter que l'image ne se répète */
-    height: 50vh; /* Pour définir la hauteur de l'élément sur la hauteur de la fenêtre */
-    margin: 10px auto; /* Ajoute une marge de 10 pixels autour de chaque image */
-    border-radius: 10px;
-    width: 33%;
+#im1,
+#im2,
+#im3 {
+  background-size: cover; /* Pour s'assurer que l'image couvre toute la zone */
+  background-position: center; /* Pour centrer l'image horizontalement et verticalement */
+  background-repeat: no-repeat; /* Pour éviter que l'image ne se répète */
+  height: 50vh; /* Pour définir la hauteur de l'élément sur la hauteur de la fenêtre */
+  margin: 10px auto; /* Ajoute une marge de 10 pixels autour de chaque image */
+  border-radius: 10px;
+  width: 100%;
 }
-#tit2{
-    font-weight: 700;
-    font-size: 50px;
+#tit2 {
+  font-weight: 700;
+  font-size: 50px;
 }
-#tit2,#par{
-    margin-top: 60px;
-    color: #222121;
-    font-family: Arial, Helvetica, sans-serif;
+#tit2,
+#par {
+  margin-top: 60px;
+  color: #222121;
+  font-family: Arial, Helvetica, sans-serif;
 }
-#par{
-    margin-top: 30px;
-    font-size: 40px;
-    font-weight: 500;
-    
+#par {
+  margin-top: 30px;
+  font-size: 40px;
+  font-weight: 500;
 }
-#bt{
-    border-radius: 30px;
-    width: 40%;
-    color: #222121;
-    font-weight: 600;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #EAF205;
-    border: none;
+#bt {
+  border-radius: 30px;
+  width: 40%;
+  color: #222121;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eaf205;
+  border: none;
 }
 
-#im3 #tit2,#par{
-    margin-top: 5px;
+#im3 #tit2,
+#par {
+  margin-top: 5px;
 }
-#bt:hover{
-    background: #EEF365;
+#bt:hover {
+  background: #eef365;
 }
-#im1:hover, #im2:hover, #im3:hover {
-    transform: perspective(1000px) rotateZ(0deg) translateZ(20px) scale(1.03); /* Appliquer des transformations sur l'axe Z */
-    transition: transform 0.5s ease; /* Ajouter une transition fluide */
-    cursor: pointer;
+#im1:hover,
+#im2:hover,
+#im3:hover {
+  transform: perspective(1000px) rotateZ(0deg) translateZ(20px) scale(1.03); /* Appliquer des transformations sur l'axe Z */
+  transition: transform 0.5s ease; /* Ajouter une transition fluide */
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  #bd {
+    height: auto; /* Hauteur automatique pour s'adapter au contenu */
+  }
 }
