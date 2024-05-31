@@ -1,7 +1,20 @@
 import "../style/body3.css";
-
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 
 function Bodytree() {
+  const [sectors, setSectors] = useState([]);
+
+  useEffect(() => {
+    axios.get('http://localhost:3000/api/sectors')
+      .then(response => {
+        setSectors(response.data);
+      })
+      .catch(error => {
+        console.error('impossible d`obtenire l`api');
+      });
+  }, []);
+
   return (
     <div className="container">
       <div className="row">
@@ -48,142 +61,29 @@ function Bodytree() {
 
       <div id="carouselExample" className="carousel slide">
         <div className="carousel-inner">
-          <div className="carousel-item active">
-            <div className="row">
-              <div className="col-lg-3 col-md-4 col-sm-12">
-                <div className="card">
-                  <img
-                    className="card-img-top"
-                    src=""
-                    alt="Card image"
-                  />
-                  <div className="card-body">
-                    <h4 className="card-title">John Doe</h4>
-                    <p className="card-text">Some example text.</p>
-                    <a href="#" className="btn btn-primary">
-                      Suivre
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-3 col-md-4 col-sm-12">
-                <div className="card">
-                <img
-                    className="card-img-top"
-                    src=""
-                    alt="Card image"
-                  />
-                  <div className="card-body">
-                    <h4 className="card-title">John Doe</h4>
-                    <p className="card-text">Some example text.</p>
-                    <a href="#" className="btn btn-primary">
-                      Suivre
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-3 col-md-4 col-sm-12">
-                <div className="card">
-                <img
-                    className="card-img-top"
-                    src=""
-                    alt="Card image"
-                  />
-                  <div className="card-body">
-                    <h4 className="card-title">John Doe</h4>
-                    <p className="card-text">Some example text.</p>
-                    <a href="#" className="btn btn-primary">
-                      Suivre
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-3 col-md-4 col-sm-12">
-                <div className="card">
-                <img
-                    className="card-img-top"
-                    src=""
-                    alt="Card image"
-                  />
-                  <div className="card-body">
-                    <h4 className="card-title">John Doe</h4>
-                    <p className="card-text">Some example text.</p>
-                    <a href="#" className="btn btn-primary">
-                      Suivre
-                    </a>
+          {/* You can iterate over sectors to display data */}
+          {sectors.aeronautique && sectors.aeronautique.map((sector, index) => (
+            <div className={`carousel-item ${index === 0 ? 'active' : ''}`} key={index}>
+              <div className="row">
+                <div className="col-lg-3 col-md-4 col-sm-12">
+                  <div className="card">
+                    <img
+                      className="card-img-top"
+                      src=""
+                      alt="Card image"
+                    />
+                    <div className="card-body">
+                      <h4 className="card-title">{sector.name}</h4>
+                      <p className="card-text">{sector.location}</p>
+                      <a href="#" className="btn btn-primary">
+                        Suivre
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="carousel-item">
-            <div className="row">
-              <div className="col-lg-3 col-md-4 col-sm-12">
-                <div className="card">
-                <img
-                    className="card-img-top"
-                    src=""
-                    alt="Card image"
-                  />
-                  <div className="card-body">
-                    <h4 className="card-title">John Doe</h4>
-                    <p className="card-text">Some example text.</p>
-                    <a href="#" className="btn btn-primary">
-                      Suivre
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-3 col-md-4 col-sm-12">
-                <div className="card">
-                <img
-                    className="card-img-top"
-                    src=""
-                    alt="Card image"
-                  />
-                  <div className="card-body">
-                    <h4 className="card-title">John Doe</h4>
-                    <p className="card-text">Some example text.</p>
-                    <a href="#" className="btn btn-primary">
-                      Suivre
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-3 col-md-4 col-sm-12">
-                <div className="card">
-                <img
-                    className="card-img-top"
-                    src=""
-                    alt="Card image"
-                  />
-                  <div className="card-body">
-                    <h4 className="card-title">John Doe</h4>
-                    <p className="card-text">Some example text.</p>
-                    <a href="#" className="btn btn-primary">
-                      Suivre
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-3 col-md-4 col-sm-12">
-                <div className="card">
-                   <img
-                    className="card-img-top"
-                    src=""
-                    alt="Card image"
-                  />
-                  <div className="card-body">
-                    <h4 className="card-title">John Doe</h4>
-                    <p className="card-text">Some example text.</p>
-                    <a href="#" className="btn btn-primary">
-                      Suivre
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
         <button
           className="carousel-control-prev"
